@@ -25,7 +25,7 @@ const Toolbar = ({ usedCommands = [], onClick }) => {
     <div className="toolbar">
       {allowedCommands.map((command) => (
         <CommandButton
-          keu={command.id}
+          key={command.id}
           label={command.label}
           cmd={command.command}
           used={usedCommands.includes(command.command)}
